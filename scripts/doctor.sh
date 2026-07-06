@@ -33,7 +33,7 @@ check_cmd git
 check_cmd gh
 check_cmd node
 check_cmd npm
-check_cmd python
+check_cmd python3
 check_cmd uv
 check_cmd jq
 check_cmd yq
