@@ -1,0 +1,61 @@
+#!/bin/zsh
+
+show_menu() {
+  echo "=============================="
+  echo "        AI Launcher"
+  echo "=============================="
+  echo "1. Codex Plus   - OpenAI official / ChatGPT Plus"
+  echo "2. Codex API    - SynapAI API balance"
+  echo "3. Gemini       - Gemini CLI"
+  echo "4. Claude       - Claude Code"
+  echo "5. VSCode       - Open current directory"
+  echo "6. Doctor       - Check workstation status"
+  echo "0. Exit"
+  echo "=============================="
+}
+
+doctor() {
+  if [ -f "./scripts/doctor.sh" ]; then
+    bash ./scripts/doctor.sh
+  else
+    npm run doctor
+  fi
+}
+
+run_cmd() {
+  case "$1" in
+    plus|1)
+      codex
+      ;;
+    api|2)
+      codex --profile synapai
+      ;;
+    gemini|3)
+      gemini
+      ;;
+    claude|4)
+      claude
+      ;;
+    vscode|5)
+      code .
+      ;;
+    doctor|6)
+      doctor
+      ;;
+    menu|"")
+      show_menu
+      echo -n "请选择："
+      read choice
+      run_cmd "$choice"
+      ;;
+    0|exit|quit)
+      exit 0
+      ;;
+    *)
+      echo "未知命令：$1"
+      echo "执行 ai 查看菜单"
+      ;;
+  esac
+}
+
+run_cmd "$1"
