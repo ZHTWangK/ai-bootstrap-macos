@@ -1,5 +1,3 @@
-tap "homebrew/cask"
-
 brew "git"
 brew "gh"
 brew "node"
@@ -13,6 +11,6 @@ brew "tmux"
 
 cask "iterm2"
 cask "visual-studio-code"
-cask "docker"
+cask "docker-desktop"
 cask "raycast"
 cask "lm-studio"
