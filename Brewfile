@@ -1,0 +1,18 @@
+tap "homebrew/cask"
+
+brew "git"
+brew "gh"
+brew "node"
+brew "python"
+brew "uv"
+brew "jq"
+brew "fzf"
+brew "ripgrep"
+brew "yq"
+brew "tmux"
+
+cask "iterm2"
+cask "visual-studio-code"
+cask "docker"
+cask "raycast"
+cask "lm-studio"

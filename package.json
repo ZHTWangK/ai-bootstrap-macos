@@ -1,0 +1,17 @@
+{
+  "name": "ai-bootstrap-macos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Bootstrap for macOS",
+  "scripts": {
+    "bootstrap": "bash bootstrap.sh",
+    "doctor": "bash scripts/doctor.sh"
+  },
+  "aiTools": {
+    "globalNpmPackages": [
+      "@openai/codex",
+      "@google/gemini-cli",
+      "@anthropic-ai/claude-code"
+    ]
+  }
+}
