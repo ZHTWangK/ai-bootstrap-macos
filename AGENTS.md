@@ -41,3 +41,15 @@ The goal is to make the environment reproducible, version-controlled, and easy t
 - MCP server configuration
 - Project templates
 - AI workflow launcher
+
+## Workflows
+
+Reusable workflows are stored in the workflows/ directory.
+
+Before starting a task, choose the closest workflow:
+
+- coding.md for implementation
+- review.md for code review
+- research.md for technical research
+- writing.md for documents
+- project-start.md for new projects
