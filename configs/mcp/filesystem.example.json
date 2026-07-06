@@ -1,0 +1,7 @@
+{
+  "name": "filesystem",
+  "description": "Example filesystem MCP configuration. Do not commit private paths or secrets.",
+  "roots": [
+    "~/Workspace"
+  ]
+}
