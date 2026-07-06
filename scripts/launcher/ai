@@ -28,7 +28,7 @@ run_cmd() {
       codex
       ;;
     api|2)
-      codex --profile synapai
+      codex --profile synapai --disable image_generation
       ;;
     gemini|3)
       gemini
